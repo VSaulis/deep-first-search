@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
-using System.Text;
 
-namespace ForwardChaining {
+namespace DeepFirstSearch {
     public static class Log {
         private static readonly List<string> _log = new List<string>();
         private static readonly string _filePath = @"C:\Users\Vytautas\Desktop\AI\DeepFirstSearch\DeepFirstSearch\result\result.txt";
