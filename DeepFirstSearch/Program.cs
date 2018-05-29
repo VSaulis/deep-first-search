@@ -4,7 +4,7 @@ namespace DeepFirstSearch {
     class Program {
         static void Main(string[] args) {
             string path = @"C:\Users\Vytautas\Desktop\AI\DeepFirstSearch\DeepFirstSearch\tests\";
-            DeepFirstSearch deepFirstSearch = new DeepFirstSearch(path + "Test3.txt");
+            DeepFirstSearch deepFirstSearch = new DeepFirstSearch(path + "Test5.txt");
 
             int i, j;
 
@@ -23,7 +23,6 @@ namespace DeepFirstSearch {
                 Log.AddToLog("Path not found.");
                 Log.WriteToFile();
             }
-            Console.Read();
         }
     }
 }

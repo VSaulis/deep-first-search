@@ -1,43 +1,230 @@
 1. .Step : 2. Try to move to visited position.
-2. ..Step : 3. Move to i : 3 j : 3
+2. ..Step : 3. Move to i : 4 j : 4
 3. ..Step : 3. Try to move to visited position.
-4. ..Step : 3. Try to move to visited position.
-5. ...Step : 4. Move to i : 3 j : 4
-6. ...Step : 4. Try to move to visited position.
-7. ....Step : 5. Move to i : 2 j : 4
-8. ....Step : 5. Try to move to visited position.
-9. .....Step : 6. Move to i : 1 j : 4
-10. ......Step : 7. Move to i : 1 j : 3
-11. .......Step : 8. Move to i : 1 j : 2
-12. ........Step : 9. Move to i : 1 j : 1
-13. ........Step : 9. Try to move out of maze.
-14. ........Step : 9. Try to move out of maze.
-15. ........Step : 9. Try to move to visited position.
-16. ........Step : 9. Try to move to visited position.
-17. ........Step : 9. Unsuccessfull path. Backtracking.
-18. ........Step : 8. Try to move out of maze.
-19. ........Step : 8. Try to move to visited position.
-20. ........Step : 8. Try to move to visited position.
-21. .......Step : 8. Unsuccessfull path. Backtracking.
-22. .......Step : 7. Try to move out of maze.
-23. .......Step : 7. Try to move to visited position.
-24. .......Step : 7. Try to move to visited position.
-25. ......Step : 7. Unsuccessfull path. Backtracking.
-26. ......Step : 6. Try to move out of maze.
-27. .......Step : 7. Move to i : 1 j : 5
-28. .......Step : 7. Try to move to visited position.
-29. .......Step : 7. Try to move out of maze.
-30. ........Step : 8. Move to i : 1 j : 6
-31. ........Step : 8. Maze edge reached.
+4. ...Step : 4. Move to i : 5 j : 4
+5. ...Step : 4. Try to move to visited position.
+6. ....Step : 5. Move to i : 6 j : 4
+7. .....Step : 6. Move to i : 6 j : 3
+8. ......Step : 7. Move to i : 6 j : 2
+9. ......Step : 7. Try to move to visited position.
+10. .......Step : 8. Move to i : 7 j : 2
+11. .......Step : 8. Try to move to visited position.
+12. ........Step : 9. Move to i : 8 j : 2
+13. ........Step : 9. Try to move to visited position.
+14. .........Step : 10. Move to i : 9 j : 2
+15. .........Step : 10. Try to move to visited position.
+16. .........Step : 10. Try to move to visited position.
+17. ..........Step : 11. Move to i : 9 j : 3
+18. ..........Step : 11. Try to move to visited position.
+19. ...........Step : 12. Move to i : 10 j : 3
+20. ...........Step : 12. Try to move to visited position.
+21. ............Step : 13. Move to i : 11 j : 3
+22. ............Step : 13. Try to move to visited position.
+23. .............Step : 14. Move to i : 12 j : 3
+24. .............Step : 14. Try to move to visited position.
+25. .............Step : 14. Try to move to visited position.
+26. ..............Step : 15. Move to i : 12 j : 4
+27. ..............Step : 15. Try to move to visited position.
+28. ...............Step : 16. Move to i : 13 j : 4
+29. ...............Step : 16. Try to move to visited position.
+30. ...............Step : 16. Try to move to visited position.
+31. ................Step : 17. Move to i : 13 j : 5
+32. ................Step : 17. Try to move to visited position.
+33. ................Step : 17. Try to move to visited position.
+34. .................Step : 18. Move to i : 13 j : 6
+35. .................Step : 18. Try to move to visited position.
+36. .................Step : 18. Try to move to visited position.
+37. ..................Step : 19. Move to i : 13 j : 7
+38. ..................Step : 19. Try to move to visited position.
+39. ..................Step : 19. Try to move to visited position.
+40. ...................Step : 20. Move to i : 13 j : 8
+41. ...................Step : 20. Try to move to visited position.
+42. ...................Step : 20. Try to move to visited position.
+43. ....................Step : 21. Move to i : 13 j : 9
+44. ....................Step : 21. Try to move to visited position.
+45. ....................Step : 21. Try to move to visited position.
+46. ....................Step : 21. Try to move to visited position.
+47. .....................Step : 22. Move to i : 12 j : 9
+48. .....................Step : 22. Try to move to visited position.
+49. .....................Step : 22. Try to move to visited position.
+50. .....................Step : 22. Try to move to visited position.
+51. ......................Step : 23. Move to i : 11 j : 9
+52. .......................Step : 24. Move to i : 11 j : 8
+53. ........................Step : 25. Move to i : 11 j : 7
+54. ........................Step : 25. Try to move to visited position.
+55. ........................Step : 25. Try to move to visited position.
+56. ........................Step : 25. Try to move to visited position.
+57. .........................Step : 26. Move to i : 10 j : 7
+58. .........................Step : 26. Try to move to visited position.
+59. .........................Step : 26. Try to move to visited position.
+60. ..........................Step : 27. Move to i : 10 j : 8
+61. ..........................Step : 27. Try to move to visited position.
+62. ..........................Step : 27. Try to move to visited position.
+63. ...........................Step : 28. Move to i : 10 j : 9
+64. ...........................Step : 28. Try to move to visited position.
+65. ...........................Step : 28. Try to move to visited position.
+66. ...........................Step : 28. Try to move to visited position.
+67. ...........................Step : 28. Try to move to visited position.
+68. ...........................Step : 28. Unsuccessfull path. Backtracking.
+69. ...........................Step : 27. Try to move to visited position.
+70. ..........................Step : 27. Unsuccessfull path. Backtracking.
+71. ...........................Step : 27. Move to i : 9 j : 7
+72. ...........................Step : 27. Try to move to visited position.
+73. ...........................Step : 27. Try to move to visited position.
+74. ...........................Step : 27. Try to move to visited position.
+75. ............................Step : 28. Move to i : 8 j : 7
+76. ............................Step : 28. Try to move to visited position.
+77. ............................Step : 28. Try to move to visited position.
+78. .............................Step : 29. Move to i : 8 j : 8
+79. .............................Step : 29. Try to move to visited position.
+80. .............................Step : 29. Try to move to visited position.
+81. ..............................Step : 30. Move to i : 8 j : 9
+82. ..............................Step : 30. Try to move to visited position.
+83. ..............................Step : 30. Try to move to visited position.
+84. ...............................Step : 31. Move to i : 8 j : 10
+85. ...............................Step : 31. Try to move to visited position.
+86. ...............................Step : 31. Try to move to visited position.
+87. ................................Step : 32. Move to i : 8 j : 11
+88. ................................Step : 32. Try to move to visited position.
+89. ................................Step : 32. Try to move to visited position.
+90. .................................Step : 33. Move to i : 8 j : 12
+91. .................................Step : 33. Try to move to visited position.
+92. .................................Step : 33. Try to move to visited position.
+93. ..................................Step : 34. Move to i : 8 j : 13
+94. ..................................Step : 34. Try to move to visited position.
+95. ..................................Step : 34. Try to move to visited position.
+96. ...................................Step : 35. Move to i : 8 j : 14
+97. ...................................Step : 35. Try to move to visited position.
+98. ...................................Step : 35. Try to move to visited position.
+99. ...................................Step : 35. Try to move to visited position.
+100. ....................................Step : 36. Move to i : 7 j : 14
+101. ....................................Step : 36. Try to move to visited position.
+102. ....................................Step : 36. Try to move to visited position.
+103. ....................................Step : 36. Try to move to visited position.
+104. .....................................Step : 37. Move to i : 6 j : 14
+105. ......................................Step : 38. Move to i : 6 j : 13
+106. .......................................Step : 39. Move to i : 6 j : 12
+107. .......................................Step : 39. Try to move to visited position.
+108. .......................................Step : 39. Try to move to visited position.
+109. .......................................Step : 39. Try to move to visited position.
+110. ........................................Step : 40. Move to i : 5 j : 12
+111. ........................................Step : 40. Try to move to visited position.
+112. ........................................Step : 40. Try to move to visited position.
+113. ........................................Step : 40. Try to move to visited position.
+114. .........................................Step : 41. Move to i : 4 j : 12
+115. .........................................Step : 41. Try to move to visited position.
+116. .........................................Step : 41. Try to move to visited position.
+117. .........................................Step : 41. Try to move to visited position.
+118. ..........................................Step : 42. Move to i : 3 j : 12
+119. ..........................................Step : 42. Try to move to visited position.
+120. ..........................................Step : 42. Try to move to visited position.
+121. ...........................................Step : 43. Move to i : 3 j : 13
+122. ...........................................Step : 43. Try to move to visited position.
+123. ...........................................Step : 43. Try to move to visited position.
+124. ............................................Step : 44. Move to i : 3 j : 14
+125. ............................................Step : 44. Try to move to visited position.
+126. .............................................Step : 45. Move to i : 4 j : 14
+127. .............................................Step : 45. Try to move to visited position.
+128. ..............................................Step : 46. Move to i : 5 j : 14
+129. ..............................................Step : 46. Try to move to visited position.
+130. ..............................................Step : 46. Try to move to visited position.
+131. ..............................................Step : 46. Try to move to visited position.
+132. ..............................................Step : 46. Try to move to visited position.
+133. ..............................................Step : 46. Unsuccessfull path. Backtracking.
+134. ..............................................Step : 45. Try to move to visited position.
+135. ..............................................Step : 45. Try to move to visited position.
+136. .............................................Step : 45. Unsuccessfull path. Backtracking.
+137. .............................................Step : 44. Try to move to visited position.
+138. .............................................Step : 44. Try to move to visited position.
+139. ............................................Step : 44. Unsuccessfull path. Backtracking.
+140. ............................................Step : 43. Try to move to visited position.
+141. ...........................................Step : 43. Unsuccessfull path. Backtracking.
+142. ...........................................Step : 42. Try to move to visited position.
+143. ..........................................Step : 42. Unsuccessfull path. Backtracking.
+144. .........................................Step : 41. Unsuccessfull path. Backtracking.
+145. ........................................Step : 40. Unsuccessfull path. Backtracking.
+146. .......................................Step : 39. Unsuccessfull path. Backtracking.
+147. .......................................Step : 38. Try to move to visited position.
+148. .......................................Step : 38. Try to move to visited position.
+149. .......................................Step : 38. Try to move to visited position.
+150. ......................................Step : 38. Unsuccessfull path. Backtracking.
+151. ......................................Step : 37. Try to move to visited position.
+152. .......................................Step : 38. Move to i : 6 j : 15
+153. .......................................Step : 38. Try to move to visited position.
+154. .......................................Step : 38. Try to move to visited position.
+155. ........................................Step : 39. Move to i : 6 j : 16
+156. ........................................Step : 39. Try to move to visited position.
+157. .........................................Step : 40. Move to i : 7 j : 16
+158. .........................................Step : 40. Try to move to visited position.
+159. ..........................................Step : 41. Move to i : 8 j : 16
+160. ..........................................Step : 41. Try to move to visited position.
+161. ...........................................Step : 42. Move to i : 9 j : 16
+162. ...........................................Step : 42. Try to move to visited position.
+163. ............................................Step : 43. Move to i : 10 j : 16
+164. .............................................Step : 44. Move to i : 10 j : 15
+165. ..............................................Step : 45. Move to i : 10 j : 14
+166. ..............................................Step : 45. Try to move to visited position.
+167. ...............................................Step : 46. Move to i : 11 j : 14
+168. ...............................................Step : 46. Try to move to visited position.
+169. ................................................Step : 47. Move to i : 12 j : 14
+170. ................................................Step : 47. Try to move to visited position.
+171. .................................................Step : 48. Move to i : 13 j : 14
+172. .................................................Step : 48. Try to move to visited position.
+173. .................................................Step : 48. Try to move to visited position.
+174. .................................................Step : 48. Try to move to visited position.
+175. .................................................Step : 48. Try to move to visited position.
+176. .................................................Step : 48. Unsuccessfull path. Backtracking.
+177. .................................................Step : 47. Try to move to visited position.
+178. .................................................Step : 47. Try to move to visited position.
+179. ................................................Step : 47. Unsuccessfull path. Backtracking.
+180. ................................................Step : 46. Try to move to visited position.
+181. ................................................Step : 46. Try to move to visited position.
+182. ...............................................Step : 46. Unsuccessfull path. Backtracking.
+183. ...............................................Step : 45. Try to move to visited position.
+184. ...............................................Step : 45. Try to move to visited position.
+185. ..............................................Step : 45. Unsuccessfull path. Backtracking.
+186. ..............................................Step : 44. Try to move to visited position.
+187. ..............................................Step : 44. Try to move to visited position.
+188. ..............................................Step : 44. Try to move to visited position.
+189. .............................................Step : 44. Unsuccessfull path. Backtracking.
+190. .............................................Step : 43. Try to move to visited position.
+191. .............................................Step : 43. Try to move to visited position.
+192. .............................................Step : 43. Try to move to visited position.
+193. ............................................Step : 43. Unsuccessfull path. Backtracking.
+194. ............................................Step : 42. Try to move to visited position.
+195. ............................................Step : 42. Try to move to visited position.
+196. ...........................................Step : 42. Unsuccessfull path. Backtracking.
+197. ...........................................Step : 41. Try to move to visited position.
+198. ...........................................Step : 41. Try to move to visited position.
+199. ..........................................Step : 41. Unsuccessfull path. Backtracking.
+200. ..........................................Step : 40. Try to move to visited position.
+201. ..........................................Step : 40. Try to move to visited position.
+202. .........................................Step : 40. Unsuccessfull path. Backtracking.
+203. ..........................................Step : 40. Move to i : 6 j : 17
+204. ..........................................Step : 40. Try to move to visited position.
+205. ..........................................Step : 40. Try to move to visited position.
+206. ...........................................Step : 41. Move to i : 6 j : 18
+207. ...........................................Step : 41. Try to move to visited position.
+208. ...........................................Step : 41. Try to move to visited position.
+209. ............................................Step : 42. Move to i : 6 j : 19
+210. ............................................Step : 42. Maze edge reached.
 
- 1 1 1 1 1 0 1
- 0 0 0 0 6 7 8
- 1 1 1 1 5 1 1
- 1 0 1 3 4 1 1
- 1 0 1 2 1 1 1
- 1 0 1 0 1 1 1
- 1 0 1 0 1 1 1
- 1 0 0 0 1 1 1
- 1 1 1 1 1 1 1
+ 01 01 01 01 01 01 01 01 01 00 01 01 01 01 01 01 00 01 01 01
+ 01 01 00 01 01 01 00 01 01 00 01 01 01 01 01 01 00 01 00 01
+ 01 01 00 01 00 00 00 00 00 00 01 01 01 01 01 00 00 00 00 01
+ 01 01 00 01 02 01 00 01 01 01 01 01 00 00 00 01 00 01 00 01
+ 01 01 00 01 03 01 00 01 00 01 01 01 00 01 00 01 00 01 00 01
+ 01 01 00 01 04 01 00 00 00 01 01 01 00 01 00 01 01 01 00 01
+ 01 01 07 06 05 01 01 01 01 01 01 01 00 00 37 38 39 40 41 42
+ 01 01 08 01 00 00 00 01 01 01 01 01 01 01 36 01 00 01 01 01
+ 01 01 09 00 01 01 01 28 29 30 31 32 33 34 35 01 00 01 01 01
+ 01 01 10 11 00 00 01 27 01 01 01 01 01 01 01 01 00 01 01 01
+ 01 01 01 12 01 00 01 26 00 00 01 01 01 01 00 00 00 01 01 01
+ 01 01 01 13 00 00 01 25 24 23 01 01 01 01 00 01 01 01 01 01
+ 01 01 01 14 15 01 01 01 01 22 01 01 01 01 00 01 01 01 01 01
+ 01 01 01 01 16 17 18 19 20 21 01 01 01 01 00 01 01 01 01 01
+ 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
 
+Path in rules : Bottom -> Right -> Right -> Right -> Right -> Right -> Up -> Up -> Right -> Right -> Right -> Right -> Right -> Right -> Right -> Up -> Up -> Left -> Left -> Up -> Up -> Up -> Right -> Right -> Bottom -> Bottom -> Right -> Right -> Bottom -> Bottom -> Bottom -> Bottom -> Left -> Left -> Bottom -> Bottom -> Bottom -> Right -> Right -> Right
+Path in peaks : [3, 4] [4, 4] [5, 4] [6, 4] [6, 3] [6, 2] [7, 2] [8, 2] [9, 2] [9, 3] [10, 3] [11, 3] [12, 3] [12, 4] [13, 4] [13, 5] [13, 6] [13, 7] [13, 8] [13, 9] [12, 9] [11, 9] [11, 8] [11, 7] [10, 7] [9, 7] [8, 7] [8, 8] [8, 9] [8, 10] [8, 11] [8, 12] [8, 13] [8, 14] [7, 14] [6, 14] [6, 15] [6, 16] [6, 17] [6, 18] [6, 19] 
 Path found.

@@ -14,6 +14,20 @@ namespace DeepFirstSearch {
             ReadMazeFromFile(filename);
         }
 
+        public void PrintMazeBig() {
+            Log.AddToLog("");
+            foreach (var row in _maze) {
+                string toLog = "";
+                foreach (var col in row) {
+                    toLog += " " + col.ToString("00");
+                    Console.Write(" {00}", col);
+                }
+                Log.AddToLog(toLog);
+                Console.WriteLine();
+            }
+            Log.AddToLog("");
+        }
+
         public void PrintMaze() {
             Log.AddToLog("");
             foreach (var row in _maze) {
