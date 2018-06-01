@@ -66,6 +66,7 @@ namespace DeepFirstSearch
                         _stepsCount++;
                         Log.AddToLog(_stepsCount + ". " + new String('.', depth) + "Step : " + step + ". Move to i : " + newPosition.Item1 + " j : " + newPosition.Item2);
                         _maze.SetStatus(step, newPosition.Item1, newPosition.Item2);
+
                         if (!Iterate(depth, step, newPosition.Item1, newPosition.Item2)) {
                             _stepsCount++;
                             _pathPeaks.Remove(newPosition);

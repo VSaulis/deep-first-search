@@ -29,16 +29,27 @@ namespace DeepFirstSearch {
         }
 
         public void PrintMaze() {
+            int j = 0;
             Log.AddToLog("");
             foreach (var row in _maze) {
-                string toLog = "";
+                string toLog = " "+j+" ";
                 foreach (var col in row) {
                     toLog += " " + col;
                     Console.Write(" " + col);
                 }
                 Log.AddToLog(toLog);
                 Console.WriteLine();
+                j++;
             }
+
+            Log.AddToLog("");
+
+            string iAxis = "i|j";
+            for (int i = 0; i < _colsCount; i++) {
+                iAxis = iAxis + " " + i;
+            }
+            Log.AddToLog(iAxis);
+
             Log.AddToLog("");
         }
 
@@ -52,7 +63,7 @@ namespace DeepFirstSearch {
         }
 
         public bool IsPositionValid(int i, int j) {
-            if (i > 0 && j > 0 && _rowsCount > i && _colsCount > j) {
+            if (i >= 0 && j >= 0 && _rowsCount > i && _colsCount > j) {
                 return true;
             }
             else {
